@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+
+:root{
+    --branco: rgb(3, 1, 1);
+    --cor-de-fundo: #ee49af;
+    --fundo-senha: #c7177d;
+    --fundo-texto: #c7177d;
+    --borda: #ff0000;
+    --roboto: 'Roboto', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.conteinerSenha {
+    background: var(--fundo-senha);
+    border-bottom: 4px solid var(--borda);
+    width: 60%;
+    padding: 15px;
+    text-align: left;
+}
+
+#campoSenha {
+   width: 80%;
+   color: var(--branco);
+   font-size: 1.5rem;
+    padding: 20px;
+    background: transparent;
+    border: none;
+}
+
+#campoSenha:focus {
+    outline: none;
+}
+
+.conteinerPainel {
+    border: 2px solid var(--borda);
+    background: var(--fundo-texto);
+    margin: 5vw auto;
+    width: 60%;
+}
+
+.caixa-painel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.botoesPainel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  
+}
+
+.botoes, .numeroSenha{
+    display: flex;
+    color: var(--branco);
+    background: transparent;
+    border: 2px solid var(--borda);
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+.inputPainel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.barra{
+    background: var(--fundo-senha);
+    padding: 10px;
+}
+
+.forca{
+    background: var(--fundo-senha);
+    padding: 10px;
+    bottom: 20px;
+    position: relative;
+}
+
+.fraco {
+    width: 25%;
+    background: rgb(248, 111, 111);
+}
+
+.medio{
+    width: 50%;
+    background: rgb(231, 202, 218);
+}
+.forte{
+    width: 100%;
+    background: rgb(221, 117, 204);
+}
+
+.textoForca {
+    display: flex;
+    justify-content: space-between;
+}
